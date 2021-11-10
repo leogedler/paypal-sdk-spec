@@ -74,7 +74,7 @@
     }).render(cardExpiryContainer);
 ```
 
-#### 4. Add click listener to custom button
+#### 5. Add click listener to custom button
 
 ```js
     button.addEventListener('click', () => {

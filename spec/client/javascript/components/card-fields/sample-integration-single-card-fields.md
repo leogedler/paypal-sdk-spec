@@ -46,7 +46,7 @@
 
 ```
 
-#### 3. Add click listener to custom button
+#### 4. Add click listener to custom button
 
 ```js
     button.addEventListener("click", () => {
