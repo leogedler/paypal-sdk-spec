@@ -35,7 +35,6 @@
 
 ```js
     const cardFields = paypal.CardFields({
-        branded: false,
         createOrder: (data, actions) => {
             return actions.order.create({
 
