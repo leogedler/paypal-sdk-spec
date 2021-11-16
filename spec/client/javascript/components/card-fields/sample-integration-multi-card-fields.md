@@ -55,20 +55,20 @@
 
 ```js
     cardFields.NumberField({
-        onChange: ({valid, errors}) => {
-            console.log('onchange number: ', valid, errors);
+        onChange: ({isValid, errors}) => {
+            console.log('onchange number: ', isValid, errors);
         }
     }).render(cardNumberContainer);
 
     cardFields.CVVField({
-        onChange: ({valid, errors}) => {
-            console.log('onchange cvv: ', valid, errors);
+        onChange: ({isValid, errors}) => {
+            console.log('onchange cvv: ', isValid, errors);
         }
     }).render(cardCvvContainer);
 
     cardFields.ExpiryField({
-        onChange: ({valid, errors}) => {
-            console.log('onchange expiry: ', valid, errors);
+        onChange: ({isValid, errors}) => {
+            console.log('onchange expiry: ', isValid, errors);
         }
     }).render(cardExpiryContainer);
 ```

@@ -38,8 +38,8 @@
 
             // Capture the order in your server with order ID `orderID`
         },
-        onChange: ({ valid, errors }) => {
-          console.log('onchange: ', valid, errors);
+        onChange: ({ isValid, errors }) => {
+          console.log('onchange: ', isValid, errors);
         },
     }).render(cardContainer);
 
