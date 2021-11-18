@@ -7,7 +7,7 @@
 ```javascript
 paypal.CardFields({
     onChange: (data) => {
-        cardFieldContainer.className = data.valid ? 'valid' : 'invalid';
+        cardFieldContainer.className = data.isValid ? 'valid' : 'invalid';
     }
 }).render(cardFieldContainer);
 ```
@@ -16,14 +16,14 @@ paypal.CardFields({
 
 ```javascript
 const App = () => {
-    const [ valid, setValid ] = useState();
+    const [ isValid, setValid ] = useState();
 
     const onChange = (data) => {
-        setValid(data.valid);
+        setValid(data.isValid);
     };
 
     return (
-        <div class="card-field-container" className={ valid ? 'valid' : 'invalid' }>
+        <div class="card-field-container" className={ isValid ? 'valid' : 'invalid' }>
             <PayPalCardFields onChange={ onChange } />
         </div>
     );
@@ -39,19 +39,19 @@ const cardFields = paypal.CardFields();
 
 cardFields.NumberField({
     onChange: (data) => {
-        cardNumberContainer.className = data.valid ? 'valid' : 'invalid';
+        cardNumberContainer.className = data.isValid ? 'valid' : 'invalid';
     }
 }).render(cardNumberContainer);
 
 cardFields.CVVField({
     onChange: (data) => {
-        cardCVVContainer.className = data.valid ? 'valid' : 'invalid';
+        cardCVVContainer.className = data.isValid ? 'valid' : 'invalid';
     }
 }).render(cardCVVContainer);
 
 cardFields.ExpiryField({
     onChange: (data) => {
-        cardExpiryContainer.className = data.valid ? 'valid' : 'invalid';
+        cardExpiryContainer.className = data.isValid ? 'valid' : 'invalid';
     }
 }).render(cardExpiryContainer);
 ```
