@@ -54,7 +54,7 @@
 
             // Capture the order in your server with order ID `orderID`
 
-            return fetch('/api/paypal/order/' + orderID + '/capture/', {
+            return fetch(`/api/paypal/order/${orderID}/capture/`, {
                 method: 'post'
             }).then((res) => {
                 return res.json();
