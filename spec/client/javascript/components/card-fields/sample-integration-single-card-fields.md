@@ -72,7 +72,9 @@
         onChange: ({ isValid, errors }) => {
           console.log('onchange: ', isValid, errors);
         },
-    }).render(cardContainer);
+    });
+    
+    cardField.render(cardContainer);
 
 ```
 
