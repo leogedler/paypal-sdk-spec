@@ -11,5 +11,5 @@
 - [Repeat Payments](./repeat-payments.md)
 - [Branded Mode](./branded.md)
 - [3DS](./3ds.md)
-- [Step by step single card fields integration](./sample-integration-single-card-fields.md)
-- [Step by step multi card fields integration](./sample-integration-multi-card-fields.md)
+- [Step-by-Step Single Card Fields Integration](./sample-integration-single-card-fields.md)
+- [Step-by-Step Multi Card Fields Integration](./sample-integration-multi-card-fields.md)

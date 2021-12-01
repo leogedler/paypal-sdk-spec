@@ -7,9 +7,9 @@
 ```javascript
 paypal.CardFields({
     onChange: (data) => {
-        cardFieldContainer.className = data.isValid ? 'valid' : 'invalid';
+        cardContainer.className = data.isValid ? 'valid' : 'invalid';
     }
-}).render(cardFieldContainer);
+}).render(cardContainer);
 ```
 
 ### React
@@ -45,9 +45,9 @@ cardFields.NumberField({
 
 cardFields.CVVField({
     onChange: (data) => {
-        cardCVVContainer.className = data.isValid ? 'valid' : 'invalid';
+        cardCvvContainer.className = data.isValid ? 'valid' : 'invalid';
     }
-}).render(cardCVVContainer);
+}).render(cardCvvContainer);
 
 cardFields.ExpiryField({
     onChange: (data) => {
