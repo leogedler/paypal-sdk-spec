@@ -11,11 +11,11 @@
 #### 2. Create container elements for each field and the custom button
 
 ```HTML
-    <div id="multi-transactional-card-field">
+    <div id="multi-card-fields">
         <div id="card-number-field-container"></div>
         <div id="card-expiry-field-container"></div>
         <div id="card-cvv-field-container"></div>
-        <button id="button">Submit</button>
+        <button id="button" type="button">Submit</button>
     </div>
 ```
 

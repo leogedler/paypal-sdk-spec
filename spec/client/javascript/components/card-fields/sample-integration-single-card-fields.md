@@ -12,7 +12,6 @@
 
 ```HTML
     <div id="card-field-container"></div>
-
     <button id="button" type="button">Pay now</button>
 ```
 
