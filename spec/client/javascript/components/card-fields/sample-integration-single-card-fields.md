@@ -81,7 +81,13 @@
 
 ```js
     button.addEventListener('click', () => {
-        cardField.submit().then(() => {
+
+        // Billing address can be send as a extra data fields
+        const extraData = {
+            billingAddress: '1020 Test Street, US';
+        };
+
+        cardField.submit(extraData).then(() => {
 
             // Success
 

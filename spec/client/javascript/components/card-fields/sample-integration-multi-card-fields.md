@@ -12,6 +12,7 @@
 
 ```HTML
     <div id="multi-card-fields">
+        <div id="card-name-field-container"></div>
         <div id="card-number-field-container"></div>
         <div id="card-expiry-field-container"></div>
         <div id="card-cvv-field-container"></div>
@@ -20,6 +21,7 @@
 ```
 
 ```js
+    const cardNameContainer = container.querySelector('card-name-field-container'); // Optional field
     const cardNumberContainer = document.getElementById('card-number-field-container');
     const cardCvvContainer = document.getElementById('card-cvv-field-container');
     const cardExpiryContainer = document.getElementById('card-expiry-field-container');
@@ -81,6 +83,14 @@
         },
     };
 
+    // Optional cardholder name field
+    cardFields.NameField({
+        style: customStyles,
+        onChange: ({isValid, errors}) => {
+            console.log('onchange name: ', isValid, errors);
+        }
+    }).render(cardNameContainer);
+
     cardFields.NumberField({
         style: customStyles,
         onChange: ({isValid, errors}) => {
@@ -107,7 +117,13 @@
 
 ```js
     button.addEventListener('click', () => {
-        cardFields.submit().then(() => {
+
+        // Billing address can be send as a extra data fields
+        const extraData = {
+            billingAddress: '1020 Test Street, US';
+        };
+
+        cardFields.submit(extraData).then(() => {
 
             // Success
 
