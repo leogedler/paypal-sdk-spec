@@ -26,8 +26,8 @@ The following are considered out of scope for this specification:
 
 ## Tags
 
-- `__TODO__`: Placeholder for an interface which needs to be fully specced out
-- `__DEPRECATED__`: Deprecated interface which should be removed fully in the next major release
+- `__TODO__`: Placeholder for an interface which needs to be fully specced out.
+- `__DEPRECATED__`: Deprecated interface which should be removed fully in the next major release.
 
 ## Quick Start
 

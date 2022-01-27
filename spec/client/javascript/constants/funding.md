@@ -8,7 +8,7 @@ console.info(paypal.FUNDING.VENMO);
 
 ## Types
 
-```javascript
+```typescript
 enum FUNDING {
     PAYPAL = 'paypal',
     VENMO = 'venmo',

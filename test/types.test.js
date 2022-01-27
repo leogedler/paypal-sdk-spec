@@ -14,7 +14,9 @@ for (const path of findAllFiles(SPEC_ROOT, SPEC_EXTENSION)) {
             } catch (err) {
                 throw new Error(`Failed to parse code block:\n\n${ codeBlock }\n\n${ err.message }`);
             }
+        }
 
+        for (const codeBlock of getAllCodeBlocks(node, 'typescript')) {
             try {
                 parseTypeScript(codeBlock);
             } catch (err) {

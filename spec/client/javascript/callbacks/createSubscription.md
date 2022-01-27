@@ -34,7 +34,7 @@ const createSubscription = (data, actions) => {
 
 ## Types
 
-```javascript
+```typescript
 type CreateSubscription = (
     data : CreateSubscriptionData,
     actions : CreateSubscriptionActions

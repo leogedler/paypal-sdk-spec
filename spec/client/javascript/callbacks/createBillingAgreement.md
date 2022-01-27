@@ -24,7 +24,7 @@ const createBillingAgreement = (data, actions) => {
 
 ## Types
 
-```javascript
+```typescript
 type CreateBillingAgreement = (
     data : CreateBillingAgreementData,
     actions : CreateBillingAgreementActions

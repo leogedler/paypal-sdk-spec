@@ -23,7 +23,7 @@ const onApprove = (data, actions) => {
 
 ## Types
 
-```javascript
+```typescript
 type OnApprove = (
     data : OnApproveData,
     actions : OnApproveActions

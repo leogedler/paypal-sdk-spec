@@ -39,7 +39,7 @@ const createOrder = (data, actions) => {
 
 ## Types
 
-```javascript
+```typescript
 type CreateOrder = (
     data : CreateOrderData,
     actions : CreateOrderActions
